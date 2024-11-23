@@ -73,10 +73,10 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 
 #chatgptAI
-AI = is_enabled((environ.get("AI","False")), False)
-OPENAI_API = environ.get("OPENAI_API", " ")
+AI = is_enabled((environ.get("AI","True")), True)
+OPENAI_API = environ.get("OPENAI_API", "5d117836e00643c696176a9548b2f134")
 GOOGLE_API_KEY = environ.get("GOOGLE_API_KEY", "AIzaSyD214hhYJ-xf8rfaWX044_g1VEBQ0ua55Q") #DON'T REMOVE ANYTHING!! @CREDIT @SD_BOTS
-AI_LOGS = int(environ.get("AI_LOGS", "-1001868871195")) #GIVE YOUR NEW LOG CHANNEL ID TO STORE MESSAGES THAT THEY SEARCH IN BOT PM.... [ i have added this to keep an eye on the users message, to avoid misuse of Bot ]
+AI_LOGS = int(environ.get("AI_LOGS", "-1002451523671")) #GIVE YOUR NEW LOG CHANNEL ID TO STORE MESSAGES THAT THEY SEARCH IN BOT PM.... [ i have added this to keep an eye on the users message, to avoid misuse of Bot ]
 
 #Auto approve 
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '-1002309567480').split()]
@@ -85,7 +85,7 @@ APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # Verify
 VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( False )
-HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/How_to_Download_7x/26') # How to open tutorial link for verification
+HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/DownloadYourLink/11') # How to open tutorial link for verification
 
 # Others
 SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
@@ -103,10 +103,10 @@ S_CHANNEL = environ.get('S_CHANNEL', "CINEMACCBOTUPDATES")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/DARKSARVAR1)
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MOVIECHANNEL_LINKCC')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/DownloadYourLink/11') # Tutorial video link for opening shortlink website 
-IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
-MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ᴄᴏᴅᴇғʟɪx ʙᴏᴛs')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001868871195')) #Log channel id ( make sure bot is admin )
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+DnmZbLjS0iw0YWI1') #Support group link ( make sure bot is admin )
+IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
+MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : GG ʙᴏᴛs')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002451523671) #Log channel id ( make sure bot is admin )
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/CINEMACCBOTDISCUSSION') #Support group link ( make sure bot is admin )
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
@@ -132,7 +132,7 @@ QUALITIES = ["360P", "", "480P", "", "720P", "", "1080P", "", "1440P", "", "2160
 
 
 # add premium logs channel id
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1001868871195'))
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002451523671'))
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
