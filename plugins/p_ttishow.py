@@ -9,7 +9,7 @@ from Script import script
 from pyrogram.errors import ChatAdminRequired
 import asyncio 
 
-"""----------------------------------------- https://t.me/codeflix_bots --------------------------------------"""
+"""----------------------------------------- https://t.me/CINEMACCBOTUPDATES --------------------------------------"""
 
 @Client.on_message(filters.new_chat_members & filters.group)
 async def save_group(bot, message):
@@ -59,7 +59,7 @@ async def save_group(bot, message):
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                                                                           InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ', url='https://t.me/OtakuFlix_Network/4639'),
+                                                                           InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ', url='https://t.me/CINEMACCBOTUPDATES/27'),
                                                                            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇꜱ', url='https://telegram.me/CINEMACCBOTUPDATES')
                                                                         ]]
                                                  ),
