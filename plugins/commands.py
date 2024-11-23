@@ -50,10 +50,10 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('• ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴜʀ ᴄʜᴀᴛ •', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('• ᴍᴀsᴛᴇʀ •', url="https://t.me/sewxiy"),
-                    InlineKeyboardButton('• sᴜᴘᴘᴏʀᴛ •', url='https://t.me/weebs_support')
+                    InlineKeyboardButton('• ᴍᴀsᴛᴇʀ •', url="https://t.me/DMWITHGOKUL"),
+                    InlineKeyboardButton('• sᴜᴘᴘᴏʀᴛ •', url='https://t.me/CINEMACCBOTDISCUSSION')
                 ],[
-                    InlineKeyboardButton('• ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ •', url="https://t.me/codeflix_bots")
+                    InlineKeyboardButton('• ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ •', url="https://t.me/MOVIECHANNEL_LINKCC")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.GSTART_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -131,7 +131,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton("ᴛʀʏ ᴀɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_photo(
             chat_id=message.from_user.id,
-            photo="https://graph.org/file/9649c1dcbae09f2e7700e.jpg",
+            photo="https://graph.org/file/43f25856bde8cdfe2264c-808110c884c898f41d.jpg",
             caption="<b>ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ᴛʀʏ ᴀɢᴀɪɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ʀᴇǫᴜᴇꜱᴛᴇᴅ ꜰɪʟᴇ.</b>",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
@@ -1231,8 +1231,8 @@ async def ginfo(bot, message):
 async def donate_command(client, message):
     buttons = [
         [
-            InlineKeyboardButton("• ᴅᴏɴᴀᴛᴇ • ", url="https://t.me/OtakuFlix_Network/4640"),
-            InlineKeyboardButton("• sᴜᴘᴘᴏʀᴛ •", url="https://t.me/team_netflix")
+            InlineKeyboardButton("• ᴅᴏɴᴀᴛᴇ • ", url="https://t.me/CINEMACCBOTUPDATES/28"),
+            InlineKeyboardButton("• sᴜᴘᴘᴏʀᴛ •", url="https://t.me/MOVIECHANNEL_LINKCC")
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -1242,7 +1242,7 @@ async def donate_command(client, message):
 async def help_command(client, message):
     buttons = [
         [
-            InlineKeyboardButton("• ᴏᴘᴇɴ ɪɴ ᴘʀɪᴠᴀᴛᴇ •", url="https://t.me/Lucy_Filter_bot?start=help"),
+            InlineKeyboardButton("• ᴏᴘᴇɴ ɪɴ ᴘʀɪᴠᴀᴛᴇ •", url="https://t.me/CINEMACC4_BOT?start=help"),
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -1252,8 +1252,8 @@ async def help_command(client, message):
 async def support_command(client, message):
     buttons = [
         [
-            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/weebs_support"),
-            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/codeflix_bots")
+            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/CINEMACCBOTDISCUSSION"),
+            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/CINEMACCBOTUPDATES")
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
